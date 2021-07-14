@@ -1,0 +1,266 @@
+/* --------------body Style---------- */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+/* ---------------------Common Style------------------ */
+.btn {
+    background: #E02C6D;
+    color: #FFF;
+    width: 144px;
+    height: 44px;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 20px;
+}
+.btn:hover {
+    background: rgb(14, 13, 13);
+    transition: background .5s ease-in;
+    
+}
+
+/* ----------------Header Styles----------- */
+.section-1 {
+    background-color: #2D25A0;
+    padding-top: 50px;
+
+}
+.navigation {
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+
+}
+.fas {
+    font-size: 16px;
+    margin-right: 5px;
+}
+.navigation a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    margin-right: 36px;
+    color: #FFFFFF;
+    padding: 5px 10px;
+    
+}
+.navigation a:hover {
+    background: rgb(14, 13, 13); 
+    border-radius: 10px; 
+
+}
+.header {
+    width: 85%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 auto;
+}
+.header-half {
+    width: 100%;
+    
+}
+.header-half p {
+    font-size: 64px;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+.header-half img {
+    width: 100%;
+    margin-top: 50px;
+    margin-left: 50px;
+
+}
+.header-half img:hover {
+    transform: scale(1.1);
+    transition: transform 2s ease-in;
+    cursor: pointer;
+
+}
+
+/* --------------Main Section Styles----------- */
+.players {
+    width: 85%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 27px;
+    margin: 70px auto;
+    
+}
+.player {
+    width: 85%;
+    padding: 15px;
+    border-radius: 15px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+}
+.player:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: transform 1s ease-in;
+}
+.player img {
+    width: 100%;
+    border-radius: 15px;
+    /* height: 256px; */
+}
+.player h1 {
+    color: #18191F;
+    font-size: 28px;
+    margin-top: 16px;
+    margin-bottom: 10px;
+
+}
+.player p {
+    font-size: 16px;
+    color: #6C6C6C;
+}
+
+/* ------------------Latest Video and News ------------------- */
+
+.latest-video-and-news {
+    width: 85%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 30px auto;
+    
+}
+.videos{
+    width: 100%;
+}
+.videos h1 {
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+.video {
+    width: 500px;
+    height: 435px;
+}
+.news {
+    width: 100%;
+}
+.news h1 {
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+.news p {
+    text-align: center;
+    color: rgb(5, 5, 5);
+}
+.news img {
+    width: 100%;
+}
+
+/* ---------------Last Section------------- */
+
+.section-3 {
+    width: 85%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 150px auto
+
+}
+.highlight-1 {
+    width: 100%;
+}
+.highlight-1 h1 {
+    font-size: 48px;
+    font-weight: bold;
+    color: #0A0826;
+    margin-bottom: 5px;
+}
+.highlight-1 p {
+    color: #6C6C6C;
+    font-size: 16px;
+    margin-top: 8px;
+    margin-bottom: 24px;
+}
+.highlight-1 img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* --------------Footer Area----------------- */
+footer {
+  text-align: center;
+}
+.footer-logo {
+    text-align: center;
+}
+.footer-logo img {
+    width: 470px;
+}
+.fab {
+    width: 30px;
+    padding: 10px;
+    font-size: 30px;
+    border-radius: 50%;
+}
+footer p {
+    text-align: center;
+    font-size: 18px;
+    color: #000;
+    margin-bottom: 50px;
+}
+
+
+
+/* ---------------Media Queary -------------- */
+
+@media only screen and (max-width: 688px){
+    body {
+        width:fit-content
+    }
+    .nav {
+        flex-direction: column;  
+    }
+    .nav a {
+        width: 160px;
+        text-align: center;
+        margin-right: 0;
+        display: block;
+    }
+    .section-1 {
+        width: auto;
+    }
+    
+  .players, .header {
+      grid-template-columns: repeat(1, 1fr);  
+      margin: 40px auto;
+    }
+    .players {
+        width: 100%;
+        margin-left: 20px;
+    }
+    .header {
+        height: auto;
+
+    }
+    .latest-video-and-news {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .video {
+        width: 100%;
+    }
+    .section-3 {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .highlight-1 {
+        margin-bottom: 20px;
+    }
+    footer {
+        width: auto;
+        text-align: center;
+    }
+    .footer-logo {
+        text-align: center;
+    }
+
+}
